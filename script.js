@@ -32,3 +32,12 @@ function versus(playerSelection, computerSelection) {
         console.log('you lose');
     }
 }
+
+function game(){
+
+    for(i=1;i<=5;i++){
+       let choice  = window.prompt('Enter your choice',"");
+       versus(choice,computerPlay);
+
+    }
+}
