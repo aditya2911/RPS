@@ -1,5 +1,22 @@
 
 let a = "";
+
+let rock ,paper , scissor;
+
+function Clicked(){
+    alert('you just clicked me');
+}
+
+rock = document.getElementById('rock');
+paper = document.getElementById('paper');
+scissor = document.getElementById('scissor');
+
+rock.addEventListener('click',Clicked);
+paper.addEventListener('click',Clicked);
+scissor.addEventListener('click',Clicked);
+
+
+
 function computerPlay() {
     var option =
         ["rock", "paper", "scissor"];
@@ -33,11 +50,10 @@ function versus(playerSelection, computerSelection) {
     }
 }
 
-function game(){
+// function game(){
 
-    for(i=1;i<=5;i++){
-       let choice  = window.prompt('Enter your choice',"");
-       versus(choice,computerPlay);
+//     for(i=1;i<=5;i++){
+//        let choice  = window.prompt('Enter your choice',"");
+//        versus(choice,computerPlay);
 
-    }
-}
+//     }
