@@ -3,17 +3,17 @@ let a = "";
 
 let rock ,paper , scissor;
 
-function Clicked(){
-    alert('you just clicked me');
+function Clicked(option){
+    alert('you just clicked '+option);
 }
 
 rock = document.getElementById('rock');
 paper = document.getElementById('paper');
 scissor = document.getElementById('scissor');
 
-rock.addEventListener('click',Clicked);
-paper.addEventListener('click',Clicked);
-scissor.addEventListener('click',Clicked);
+rock.addEventListener('click',function(){Clicked("rock")});
+paper.addEventListener('click',function(){Clicked("paper")});
+scissor.addEventListener('click',function(){Clicked("scissor")});
 
 
 
