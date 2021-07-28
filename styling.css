@@ -1,5 +1,38 @@
-.optionDiv {
-    margin:auto;
-    width:50%;
-    padding: 10px;;
+.optionDiv{
+    
+    width:100%;
+    position: fixed;
+    top:50%;
+    /* left:50%; */
+    padding: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.test{
+    top:50%;
+    position: fixed;
+}
+.scorecard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.heading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.optionItems{
+    /* left: 50%; */
+    padding: 10px;
+    margin-left: 5px;
+    margin-right:5px ;
 }
