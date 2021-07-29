@@ -51,13 +51,19 @@ function versus(playerSelection) {
         
         scoreOfHuman++;
         humanScore.textContent = `${scoreOfHuman}`;
+        if(scoreOfHuman === 5){
+            alert("You won")
+        }
     }
     else{
-        outputText.textContent = `you lose , you schose ${pSelected} and computer chose ${cSelection}`;
+        outputText.textContent = `you lose , you chose ${pSelected} and computer chose ${cSelection}`;
         let c = 0;
 
         scoreOfComputer++;
         computerScore.textContent = `${scoreOfComputer}`;
+        if(scoreOfComputer === 5){
+            alert("You lost , the computer won")
+        }
     }
 }
 
