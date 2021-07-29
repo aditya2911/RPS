@@ -22,6 +22,12 @@
     padding-top: 1%;
     justify-content: space-evenly;
 }
+#outputText{
+    margin: 0 auto;
+    padding-top:3% ;
+    text-align: center;
+    max-width: 400px;
+}
 .test{
     top:50%;
     position: fixed;

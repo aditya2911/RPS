@@ -1,5 +1,7 @@
 
 let a = "";
+let scoreOfHuman = 0;
+let scoreOfComputer = 0;
 
 let rock ,paper , scissor;
 
@@ -11,12 +13,12 @@ rock = document.getElementById('rock');
 paper = document.getElementById('paper');
 scissor = document.getElementById('scissor');
 
-rock.addEventListener('click',function(){Clicked("rock")});
-paper.addEventListener('click',function(){Clicked("paper")});
-scissor.addEventListener('click',function(){Clicked("scissor")});
+rock.addEventListener('click',function(){versus("rock")});
+paper.addEventListener('click',function(){versus("paper")});
+scissor.addEventListener('click',function(){versus("scissor")});
 
 
-
+// computer option randomizer
 function computerPlay() {
     var option =
         ["rock", "paper", "scissor"];
@@ -26,27 +28,36 @@ function computerPlay() {
     return option[a];
 }
 
-function versus(playerSelection, computerSelection) {
+function versus(playerSelection) {
     a = playerSelection;
-
+    let outputText = document.querySelector("#outputText");
+    let humanScore = document.querySelector("#humanNumero");
+    let computerScore = document.querySelector("#computerNumero");
 
     let pSelected = a.toLowerCase();
 
-    let cSelection = computerSelection();
+    let cSelection = computerPlay();
 
         console.log(cSelection);
     if (pSelected == cSelection) {
-        console.log("Draw");
+        outputText.textContent = "Draw";
     }
     else if (
         (pSelected == 'rock' && cSelection == 'scissor') ||
         (pSelected == 'paper' && cSelection == 'rock') ||
         (pSelected == 'scissor' && cSelection == 'paper')
     ) {
-        console.log('you won');
+        outputText.textContent =`You win , you chose ${pSelected} and computer chose ${cSelection}`;
+        
+        scoreOfHuman++;
+        humanScore.textContent = `${scoreOfHuman}`;
     }
     else{
-        console.log('you lose');
+        outputText.textContent = `you lose , you schose ${pSelected} and computer chose ${cSelection}`;
+        let c = 0;
+
+        scoreOfComputer++;
+        computerScore.textContent = `${scoreOfComputer}`;
     }
 }
 
