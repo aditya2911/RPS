@@ -1,8 +1,8 @@
 .optionDiv{
     
     width:100%;
-    position: fixed;
-    top:50%;
+    position: static;
+    margin-top: 3%;
     /* left:50%; */
     padding: 10px;
     background-color: red;
@@ -10,6 +10,17 @@
     justify-content: center;
     
     
+}
+.characterTitleAlignment{
+    text-align: center;
+    margin-top: 10%;
+}
+.characterTitle{
+    margin: 0 auto;
+    display: flex;
+    max-width: 400px;
+    padding-top: 1%;
+    justify-content: space-evenly;
 }
 .test{
     top:50%;
