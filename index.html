@@ -10,36 +10,50 @@
         Rock , Paper , Scissor
     </title>
 </head>
-<heading class="heading">
-    <h1>Rock Paper Scissors</h1>
-</heading>
-
-<div class="scorecard">
-    <h3>ScoreBoard</h3>
+<div id="startContainer">
+    <h3 id="splashH3"></h3>
+    <img  src="images_options/play-button.png" id="startButton" alt="Play">
 </div>
-
-<div class="characterTitle">
-    <div>
-        <h4>Human</h4>
-        <h3 class="characterTitleAlignment" id="humanNumero">0</h3>
-    </div>
-    <div>
-        <h4>Computer</h4>
-        <h3 class="characterTitleAlignment" id="computerNumero">0 </h3>
-    </div>
-</div>
-
-
 <body>
+
+    <heading class="heading">
+        <h1>Rock Paper Scissors</h1>
+    </heading>
+
+    <div class="scorecard">
+        <h3>ScoreBoard</h3>
+    </div>
+
+    <div class="characterTitle">
+        <div>
+            <h4>Human</h4>
+            <h3 class="characterTitleAlignment" id="humanNumero">0</h3>
+        </div>
+        <div>
+            <h4>Computer</h4>
+            <h3 class="characterTitleAlignment" id="computerNumero">0 </h3>
+        </div>
+    </div>
+
+
+
+    <audio id="mySound" type="audio/wav" src="audio/snd_squeak.wav"></audio>
+
     <div class="optionDiv">
-        
-        <img src="images_options/stone.png" class="optionItems" class="itemPopup" id="rock" alt="Rock">
-        <img src="images_options/paper.png" class="optionItems" class="itemPopup" id="paper" alt="paper">
-        <img src="images_options/scissors.png" class="optionItems" class="itemPopup" id="scissor" alt="scissors">
+
+        <img src="images_options/stone.png" class="optionItems" id="rock" alt="Rock">
+        <img src="images_options/paper.png" class="optionItems" id="paper" alt="paper">
+        <img src="images_options/scissors.png" class="optionItems" id="scissor" alt="scissors">
 
 
     </div>
     <p id="outputText"> </p>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js" defer>
+
+    </script>
+
 </body>
-<script src="script.js" defer> </script>
+
+
 </html>

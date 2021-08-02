@@ -25,6 +25,7 @@ html{
 }
 img:hover{
     transform: scale(1.15);
+    
 }
 .characterTitleAlignment{
     text-align: center;
@@ -63,6 +64,24 @@ img:hover{
     justify-content: center;
 }
 
+#startContainer{
+    width: 100%;
+    height: 100%;  
+
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    background-color: black;
+}
+#startButton{
+    position:fixed;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
 .optionItems{
     /* left: 50%; */
     padding: 10px;
