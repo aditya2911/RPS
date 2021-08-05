@@ -26,39 +26,39 @@
     <heading class="heading">
         <h1>Rock Paper Scissors</h1>
     </heading>
-<div class="centeringDiv">
-    <div class="scorecard">
-        <h3>ScoreBoard</h3>
-    </div>
-
-    <div class="characterTitle">
-        <div>
-            <h4>Human</h4>
-            <h3 class="characterTitleAlignment" id="humanNumero">0</h3>
+    <div class="centeringDiv">
+        <div class="scorecard">
+            <h3>ScoreBoard</h3>
         </div>
-        <div>
-            <h4>Computer</h4>
-            <h3 class="characterTitleAlignment" id="computerNumero">0 </h3>
+
+        <div class="characterTitle">
+            <div>
+                <h4>Human</h4>
+                <h3 class="characterTitleAlignment" id="humanNumero">0</h3>
+            </div>
+            <div>
+                <h4>Computer</h4>
+                <h3 class="characterTitleAlignment" id="computerNumero">0 </h3>
+            </div>
         </div>
+
+
+
+        <audio id="mySound" type="audio/wave" src="audio/snd_squeak.wav"></audio>
+        <audio id="soundSelect" type="audio/wave" src="audio/snd_select.wav"></audio>
+        <audio id="sansSpeak" type="audio/wave" src="audio/snd_txtsans.wav"></audio>
+        <audio id="introMusic" type="audio/wave" src="audio/Undertale OST_ 054 - Hotel (256 kbps).mp3"></audio>
+
+        <div class="optionDiv">
+
+            <img src="images_options/stone.png" class="optionItems" id="rock" alt="Rock">
+            <img src="images_options/paper.png" class="optionItems" id="paper" alt="paper">
+            <img src="images_options/scissors.png" class="optionItems" id="scissor" alt="scissors">
+
+
+        </div>
+        <p id="outputText">First to 5 points Wins </p>
     </div>
-
-
-
-    <audio id="mySound" type="audio/wave" src="audio/snd_squeak.wav"></audio>
-    <audio id="soundSelect" type="audio/wave" src="audio/snd_select.wav"></audio>
-    <audio id="sansSpeak" type="audio/wave" src="audio/snd_txtsans.wav"></audio>
-    <audio id="introMusic" type="audio/wave" src="audio/Undertale OST_ 054 - Hotel (256 kbps).mp3"></audio>
-
-    <div class="optionDiv">
-
-        <img src="images_options/stone.png" class="optionItems" id="rock" alt="Rock">
-        <img src="images_options/paper.png" class="optionItems" id="paper" alt="paper">
-        <img src="images_options/scissors.png" class="optionItems" id="scissor" alt="scissors">
-
-
-    </div>
-    <p id="outputText">First to 5 points Wins </p>
-</div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="script.js" defer>
 
@@ -68,7 +68,7 @@
 <div id="endScreen">
     <div id="endContainer1">
         <h1 id="endScreenOutput"></h1>
-        <img id="endReloadButton"  src="images_options/refresh.png" alt="reload">
+        <img id="endReloadButton" src="images_options/refresh.png" alt="reload">
     </div>
 </div>
 

@@ -28,7 +28,7 @@ body{
     position: static;
     height: 250px;
     margin-top: 3%;
-    /* left:50%; */
+    
     padding: 10px;
     border-color:white;
 
@@ -57,7 +57,7 @@ img:hover{
     margin: 0 auto;
     padding-top:3% ;
     text-align: center;
-    /* max-width: 400px; */
+   
 
 }
 .test{
@@ -68,7 +68,7 @@ img:hover{
     width: 100%;
     display: flex;
     justify-content: center;
-    /* margin-top: 5%; */
+    
 }
 
 .heading{
@@ -145,8 +145,6 @@ img:hover{
 
 #splashH3{
     
-    /* margin: 0 auto; */
-    /* align-self: flex-start;  */
 justify-self: center;    
 }
 #startButton{
@@ -156,7 +154,7 @@ justify-self: center;
     margin:auto
 }
 .optionItems{
-    /* left: 50%; */
+   
     padding: 10px;
     margin-left: 5px;
     margin-right:5px ;
