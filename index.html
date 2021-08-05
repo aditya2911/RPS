@@ -11,15 +11,22 @@
     </title>
 </head>
 <div id="startContainer">
-    <h3 id="splashH3"></h3>
-    <img  src="images_options/play-button.png" id="startButton" alt="Play">
+    <div id="secondContainer">
+        <div class="splashContainer">
+            <h1 id="splashH3"></h1>
+        </div>
+        <div class="imageContaner">
+            <img src="images_options/play-button.png" id="startButton" alt="Play">
+        </div>
+    </div>
 </div>
+
 <body>
 
     <heading class="heading">
         <h1>Rock Paper Scissors</h1>
     </heading>
-
+<div class="centeringDiv">
     <div class="scorecard">
         <h3>ScoreBoard</h3>
     </div>
@@ -37,7 +44,10 @@
 
 
 
-    <audio id="mySound" type="audio/wav" src="audio/snd_squeak.wav"></audio>
+    <audio id="mySound" type="audio/wave" src="audio/snd_squeak.wav"></audio>
+    <audio id="soundSelect" type="audio/wave" src="audio/snd_select.wav"></audio>
+    <audio id="sansSpeak" type="audio/wave" src="audio/snd_txtsans.wav"></audio>
+    <audio id="introMusic" type="audio/wave" src="audio/Undertale OST_ 054 - Hotel (256 kbps).mp3"></audio>
 
     <div class="optionDiv">
 
@@ -47,13 +57,20 @@
 
 
     </div>
-    <p id="outputText"> </p>
+    <p id="outputText">First to 5 points Wins </p>
+</div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="script.js" defer>
 
     </script>
 
 </body>
+<div id="endScreen">
+    <div id="endContainer1">
+        <h1 id="endScreenOutput"></h1>
+        <img id="endReloadButton"  src="images_options/refresh.png" alt="reload">
+    </div>
+</div>
 
 
 </html>
