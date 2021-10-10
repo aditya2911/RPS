@@ -25,6 +25,10 @@ body{
    
 }
 
+.scorecard{
+    margin-top: 3rem;
+}
+
 .optionDiv{
     
     width:auto;
@@ -63,8 +67,8 @@ img:hover{
     justify-content: center;
     width: 100%;
     height: 3rem;
-    margin-top: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.1rem; 
 
 }
 
