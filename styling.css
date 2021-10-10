@@ -1,3 +1,5 @@
+/* This file was created by ADITYA SALUNKE */
+
 @font-face {
     font-family: undertaleFont;
     src: url('MonsterFriendFore.otf');
@@ -6,6 +8,7 @@ html{
     background-color: #000000;
     font-family: undertaleFont;
     color: #ffffff;
+    overflow-x: hidden;
     
 }
 
@@ -53,6 +56,30 @@ img:hover{
     padding-top: 2.2%;
     justify-content: space-evenly;
 }
+
+#choiceVisual{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#humanChoiceVisual{
+    margin-right: 1rem;
+}
+
+#visualSeparator{
+    align-self: center;
+}
+
+#computerChoiceVisual{
+    margin-left: 1rem;
+}
+
 #outputText{
     margin: 0 auto;
     padding-top:3% ;

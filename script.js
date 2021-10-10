@@ -1,3 +1,7 @@
+// THIS FILE WAS CREATED BY ADITYA SALUNKE
+
+
+
 // helper variable for iterating and initializing
 let a = "";
 let scoreOfHuman = 0;
@@ -19,9 +23,12 @@ soundSelect.volume = 0.3;
 audio1.volume = 0.3;
 
 // initializing
-let Body = document.querySelector("body");
+let Body = document.querySelector("html");
 let startButton = document.querySelector("#startButton");
 let startContainer = document.querySelector("#startContainer");
+
+let humanChoiceVisual = document.querySelector("#humanChoiceVisual");
+let computerChoiceVisual = document.querySelector("#computerChoiceVisual");
 
 let endScreen = document.querySelector("#endScreen");
 
@@ -129,6 +136,45 @@ function versus(playerSelection) {
     // compueter variable
     let cSelection = computerPlay();
 
+    // to display the output icon selected by player
+    switch (pSelected) {
+        case 'rock':
+            humanChoiceVisual.textContent = "";
+            humanChoiceVisual.src = "images_options/stone_blue.png";
+            break;
+
+        case 'paper':
+            humanChoiceVisual.textContent = "";
+            humanChoiceVisual.src = "images_options/paper_blue.png";
+            break;
+
+        case 'scissor':
+            humanChoiceVisual.textContent = "";
+            humanChoiceVisual.src = "images_options/scissors_blue.png";
+            break;
+
+    }
+
+    // to display the output icon selected by Computer
+
+    switch (cSelection) {
+        case 'rock':
+            computerChoiceVisual.textContent = "";
+            computerChoiceVisual.src = "images_options/stone_red.png";
+            break;
+
+        case 'paper':
+            computerChoiceVisual.textContent = "";
+            computerChoiceVisual.src = "images_options/paper_red.png";
+            break;
+
+        case 'scissor':
+            computerChoiceVisual.textContent = "";
+            computerChoiceVisual.src = "images_options/scissors_red.png";
+            break;
+
+    }
+
     console.log(cSelection);
     if (pSelected == cSelection) {
         outputText.textContent = "Draw";
@@ -167,9 +213,10 @@ function versus(playerSelection) {
         if (scoreOfComputer === 5) {
             Body.style.display = "hidden";
             endScreen.style.display = "flex";
-            endScreenOutput.textContent = "You lost  "
+            endScreenOutput.textContent = "You lost  ";
 
         }
     }
 }
+
 
