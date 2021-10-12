@@ -9,6 +9,7 @@ html{
     font-family: undertaleFont;
     color: #ffffff;
     overflow-x: hidden;
+  
     
 }
 
@@ -22,6 +23,7 @@ html{
 
 body{
     z-index: 20;
+
    
 }
 

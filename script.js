@@ -50,7 +50,7 @@ let i = 0;
 let txt = "Start Game"
 function typeWriter() {
     if (i < txt.length) {
-        document.getElementById("splashH3").innerHTML += txt.charAt(i);
+        document.getElementById("splashH3").textContent += txt.charAt(i);
         i++;
 
         setTimeout(typeWriter, 200);

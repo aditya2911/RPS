@@ -1,9 +1,10 @@
-
 <!DOCTYPE html>
 <!-- this file was created by ADITYA SALUNKE -->
 <html>
 
 <head>
+
+    <!-- Reset css for better control on how our content is viewed on different browser -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styling.css ">
 
@@ -12,6 +13,9 @@
         Rock , Paper , Scissor
     </title>
 </head>
+
+<!-- This is the first layer , its the intro screen visible to player -->
+
 <div id="startContainer">
     <div id="secondContainer">
         <div class="splashContainer">
@@ -22,6 +26,9 @@
         </div>
     </div>
 </div>
+
+
+<!-- This is the second layer where the player will play the game -->
 
 <body>
 
@@ -65,12 +72,17 @@
 
         <p id="outputText">First to 5 points Wins </p>
     </div>
+
+    <!-- This are the script we will use , script.js contains the logic part -->
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="script.js" defer>
 
     </script>
 
 </body>
+
+<!-- This is the third layer which the player will view when he finishes playing -->
 <div id="endScreen">
     <div id="endContainer1">
         <h1 id="endScreenOutput"></h1>
